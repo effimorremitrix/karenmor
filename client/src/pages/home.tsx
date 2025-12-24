@@ -46,7 +46,6 @@ import { SiWhatsapp } from "react-icons/si";
 
 import heroImage from "@assets/stock_images/child_psychologist_f_553cfd6d.jpg";
 import profileImage from "@assets/image_1766602158162.png";
-import therapyRoomImage from "@assets/stock_images/child_therapy_room_c_9078bcae.jpg";
 import parentMeetingImage from "@assets/stock_images/parent_meeting_couns_e8f9549b.jpg";
 
 const contactFormSchema = z.object({
@@ -378,21 +377,13 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="order-1 md:order-2 relative">
+            <div className="order-1 md:order-2">
               <img
                 src={profileImage}
                 alt="קארן מור - פסיכולוגית חינוכית מומחית"
                 className="rounded-lg w-full object-cover aspect-[4/3]"
                 data-testid="img-profile"
               />
-              <div className="absolute -bottom-6 -right-6 hidden md:block">
-                <img
-                  src={therapyRoomImage}
-                  alt="חדר טיפולים"
-                  className="rounded-lg w-48 h-32 object-cover border-4 border-background"
-                  data-testid="img-therapy-room"
-                />
-              </div>
             </div>
           </div>
         </div>
