@@ -45,7 +45,7 @@ import {
 import { SiWhatsapp } from "react-icons/si";
 
 import heroImage from "@assets/stock_images/child_psychologist_f_553cfd6d.jpg";
-import profileImage from "@assets/stock_images/female_psychologist__eef50910.jpg";
+import profileImage from "@assets/image_1766602158162.png";
 import therapyRoomImage from "@assets/stock_images/child_therapy_room_c_9078bcae.jpg";
 import parentMeetingImage from "@assets/stock_images/parent_meeting_couns_e8f9549b.jpg";
 
