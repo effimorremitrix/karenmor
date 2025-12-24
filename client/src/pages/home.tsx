@@ -98,7 +98,7 @@ const specializations = [
 
 const testimonials = [
   {
-    quote: "קרן עזרה לבן שלי להתגבר על חרדה חברתית בצורה מדהימה. הגישה החמה והמקצועית שלה עשתה את כל ההבדל.",
+    quote: "קארן עזרה לבן שלי להתגבר על חרדה חברתית בצורה מדהימה. הגישה החמה והמקצועית שלה עשתה את כל ההבדל.",
     author: "מיכל, אמא לילד בן 9",
   },
   {
@@ -106,7 +106,7 @@ const testimonials = [
     author: "דני ושרית, הורים לשני ילדים",
   },
   {
-    quote: "האבחון המקיף והמדויק נתן לנו את הכיוון הנכון. קרן מקצועית, אכפתית ומסורה.",
+    quote: "האבחון המקיף והמדויק נתן לנו את הכיוון הנכון. קארן מקצועית, אכפתית ומסורה.",
     author: "יעל, אמא לילדה בת 7",
   },
 ];
@@ -183,7 +183,7 @@ export default function Home() {
               className="text-xl font-bold text-foreground"
               data-testid="link-logo"
             >
-              קרן מור
+              קארן מור
             </button>
 
             {/* Desktop Navigation */}
@@ -311,7 +311,7 @@ export default function Home() {
             15+ שנות ניסיון מקצועי
           </Badge>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            אני קרן מור
+            אני קארן מור
             <br />
             <span className="text-primary-foreground/90">פסיכולוגית ילדים וחינוכית</span>
           </h1>
@@ -358,7 +358,7 @@ export default function Home() {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  שלום, אני קרן מור, פסיכולוגית ילדים וחינוכית עם ניסיון עשיר בתחום ההתפתחות הרגשית והלמידה של ילדים. הקליניקה שלי ממוקמת בנתניה ואני עובדת עם ילדים, מתבגרים והוריהם.
+                  שלום, אני קארן מור, פסיכולוגית ילדים וחינוכית עם ניסיון עשיר בתחום ההתפתחות הרגשית והלמידה של ילדים. הקליניקה שלי ממוקמת בנתניה ואני עובדת עם ילדים, מתבגרים והוריהם.
                 </p>
                 <p>
                   לאורך השנים פיתחתי גישה טיפולית שמשלבת חמימות אנושית עם מקצועיות. אני מאמינה בשיתוף פעולה הדוק עם ההורים ועם הצוות החינוכי כדי לתת לכל ילד את התמיכה הטובה ביותר.
@@ -381,7 +381,7 @@ export default function Home() {
             <div className="order-1 md:order-2 relative">
               <img
                 src={profileImage}
-                alt="קרן מור - פסיכולוגית ילדים"
+                alt="קארן מור - פסיכולוגית ילדים"
                 className="rounded-lg w-full object-cover aspect-[4/3]"
                 data-testid="img-profile"
               />
@@ -840,7 +840,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-xl font-bold text-foreground mb-4">קרן מור</h3>
+              <h3 className="text-xl font-bold text-foreground mb-4">קארן מור</h3>
               <p className="text-muted-foreground leading-relaxed">
                 פסיכולוגית ילדים וחינוכית בנתניה. ליווי מקצועי והוליסטי לילדים, הורים ומחנכים.
               </p>
@@ -884,7 +884,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} קרן מור - כל הזכויות שמורות</p>
+            <p>© {new Date().getFullYear()} קארן מור - כל הזכויות שמורות</p>
           </div>
         </div>
       </footer>
