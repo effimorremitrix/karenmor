@@ -312,7 +312,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             קארן מור
             <br />
-            <span className="text-primary-foreground/90">פסיכולוגית חינוכית מומחית ומטפלת זוגית משפחתית מוסמכת</span>
+            <span className="text-primary-foreground/90">פסיכולוגית חינוכית מומחית<br />ומטפלת זוגית משפחתית מוסמכת</span>
           </h1>
           <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8 leading-relaxed">
             אני מאמינה שכל ילד מחזיק בתוכו פוטנציאל עצום. התפקיד שלי הוא ללוות אותו ואת משפחתו בדרך לגילוי הכוחות הייחודיים שלו ולצמיחה רגשית וחינוכית.
