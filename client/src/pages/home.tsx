@@ -313,7 +313,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             אני קארן מור
             <br />
-            <span className="text-primary-foreground/90">פסיכולוגית ילדים וחינוכית</span>
+            <span className="text-primary-foreground/90">פסיכולוגית חינוכית יישומית ומטפלת זוגית משפחתית מוסמכת</span>
           </h1>
           <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8 leading-relaxed">
             אני מאמינה שכל ילד מחזיק בתוכו פוטנציאל עצום. התפקיד שלי הוא ללוות אותו ואת משפחתו בדרך לגילוי הכוחות הייחודיים שלו ולצמיחה רגשית וחינוכית.
@@ -358,7 +358,7 @@ export default function Home() {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  שלום, אני קארן מור, פסיכולוגית ילדים וחינוכית עם ניסיון עשיר בתחום ההתפתחות הרגשית והלמידה של ילדים. הקליניקה שלי ממוקמת בנתניה ואני עובדת עם ילדים, מתבגרים והוריהם.
+                  שלום, אני קארן מור, פסיכולוגית חינוכית יישומית ומטפלת זוגית משפחתית מוסמכת. הקליניקה שלי ממוקמת בנתניה ואני עובדת עם ילדים, מתבגרים, זוגות ומשפחות.
                 </p>
                 <p>
                   לאורך השנים פיתחתי גישה טיפולית שמשלבת חמימות אנושית עם מקצועיות. אני מאמינה בשיתוף פעולה הדוק עם ההורים ועם הצוות החינוכי כדי לתת לכל ילד את התמיכה הטובה ביותר.
@@ -381,7 +381,7 @@ export default function Home() {
             <div className="order-1 md:order-2 relative">
               <img
                 src={profileImage}
-                alt="קארן מור - פסיכולוגית ילדים"
+                alt="קארן מור - פסיכולוגית חינוכית יישומית"
                 className="rounded-lg w-full object-cover aspect-[4/3]"
                 data-testid="img-profile"
               />
@@ -842,7 +842,7 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-bold text-foreground mb-4">קארן מור</h3>
               <p className="text-muted-foreground leading-relaxed">
-                פסיכולוגית ילדים וחינוכית בנתניה. ליווי מקצועי והוליסטי לילדים, הורים ומחנכים.
+                פסיכולוגית חינוכית יישומית ומטפלת זוגית משפחתית מוסמכת בנתניה. ליווי מקצועי והוליסטי לילדים, זוגות ומשפחות.
               </p>
             </div>
             <div>
