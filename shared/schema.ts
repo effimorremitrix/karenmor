@@ -26,9 +26,17 @@ export const contactMessages = pgTable("contact_messages", {
   preferredContact: text("preferred_contact").notNull(),
 });
 
-export const insertContactMessageSchema = createInsertSchema(contactMessages).omit({
-  id: true,
-});
+export const insertContactMessageSchema = createInsertSchema(contactMessages)
+  .omit({
+    id: true,
+  })
+  .extend({
+    name: z.string().min(2, "נא להזין שם מלא"),
+    email: z.string().email("נא להזין כתובת אימייל תקינה"),
+    phone: z.string().min(9, "נא להזין מספר טלפון תקין"),
+    message: z.string().min(10, "נא להזין הודעה"),
+    preferredContact: z.enum(["phone", "email", "whatsapp"]),
+  });
 
 export type InsertContactMessage = z.infer<typeof insertContactMessageSchema>;
 export type ContactMessage = typeof contactMessages.$inferSelect;

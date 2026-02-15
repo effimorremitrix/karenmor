@@ -692,7 +692,7 @@ export default function Home() {
                           <FormControl>
                             <RadioGroup
                               onValueChange={field.onChange}
-                              defaultValue={field.value}
+                              value={field.value}
                               className="flex flex-wrap gap-4"
                             >
                               <div className="flex items-center gap-2">
