@@ -1,34 +1,30 @@
-import { sql } from "drizzle-orm";
-import { pgTable, text, varchar } from "drizzle-orm/pg-core";
+import { sqliteTable, text } from "drizzle-orm/sqlite-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
-export const users = pgTable("users", {
-  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
-  username: text("username").notNull().unique(),
-  password: text("password").notNull(),
-});
-
-export const insertUserSchema = createInsertSchema(users).pick({
-  username: true,
-  password: true,
-});
-
-export type InsertUser = z.infer<typeof insertUserSchema>;
-export type User = typeof users.$inferSelect;
-
-export const contactMessages = pgTable("contact_messages", {
-  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+export const contactMessages = sqliteTable("contact_messages", {
+  // D1 is SQLite — there is no gen_random_uuid(). The id is generated in the
+  // Worker with crypto.randomUUID() before the insert.
+  id: text("id").primaryKey(),
   name: text("name").notNull(),
   email: text("email").notNull(),
   phone: text("phone").notNull(),
   message: text("message").notNull(),
   preferredContact: text("preferred_contact").notNull(),
+  createdAt: text("created_at").notNull(),
+  // "pending" | "sent" | "failed: <reason>" — makes a missed notification
+  // auditable with one query instead of only existing in the logs.
+  emailStatus: text("email_status").notNull().default("pending"),
 });
 
+// Every field below is explicitly redefined in .extend(), so the validation
+// contract is fully specified here and is independent of the Drizzle dialect.
+// Do not drop a .extend() line assuming the column definition covers it.
 export const insertContactMessageSchema = createInsertSchema(contactMessages)
   .omit({
     id: true,
+    createdAt: true,
+    emailStatus: true,
   })
   .extend({
     name: z.string().min(2, "נא להזין שם מלא"),
