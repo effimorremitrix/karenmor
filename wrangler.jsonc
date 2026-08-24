@@ -23,7 +23,7 @@
     {
       "binding": "DB",
       "database_name": "karenmor-contact",
-      "database_id": "PLACEHOLDER_RUN_WRANGLER_D1_CREATE",
+      "database_id": "a805c5bb-ebbc-470c-853d-42f3abd41658",
       "migrations_dir": "migrations"
     }
   ],
