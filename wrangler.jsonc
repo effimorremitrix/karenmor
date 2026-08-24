@@ -23,7 +23,7 @@
     {
       "binding": "DB",
       "database_name": "karenmor-contact",
-      "database_id": "a805c5bb-ebbc-470c-853d-42f3abd41658",
+      "database_id": "ca463683-1505-42c6-bde1-3f6b9b61426f",
       "migrations_dir": "migrations"
     }
   ],
